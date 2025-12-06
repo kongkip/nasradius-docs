@@ -1,0 +1,87 @@
+---
+title: Setup Guide
+description: 'Step-by-step Mikrotik configuration for NasRadius'
+---
+
+## Overview
+
+This guide walks you through configuring your Mikrotik router for Hotspot and PPPoE with NasRadius.
+
+## Prerequisites
+
+- Access to Mikrotik via Winbox or WebFig
+- Your tenant URL (e.g., `yourisp.nasradius.com`)
+- Admin privileges on the router
+
+## Part 1: Hotspot Setup
+
+### Step 1: Download Configuration
+
+Open Terminal in Winbox and run:
+
+```bash
+/tool fetch url="https://YOUR-TENANT.nasradius.com/api/onboarding/mikrotik-scripts/YOUR-TENANT/hotspot.rc" mode=https dst-path=hotspot.rc
+```
+
+### Step 2: Import Configuration
+
+```bash
+/import hotspot.rc
+```
+
+### What This Configures
+
+- Hotspot on IP 10.10.0.1/16
+- DHCP for client IP assignment
+- DNS configuration
+- RADIUS authentication
+- Custom login pages
+
+## Part 2: PPPoE Setup
+
+### Step 1: Download Configuration
+
+```bash
+/tool fetch url="https://YOUR-TENANT.nasradius.com/api/onboarding/mikrotik-scripts/YOUR-TENANT/pppoe.rc" mode=https dst-path=pppoe.rc
+```
+
+### Step 2: Import Configuration
+
+```bash
+/import pppoe.rc
+```
+
+### What This Configures
+
+- PPPoE server
+- IP pool: 10.11.0.10 - 10.11.0.254
+- RADIUS authentication (ports 1812, 1813)
+- RADIUS accounting
+
+## Verification
+
+After setup, verify:
+
+```bash
+# Check Hotspot
+/ip hotspot print
+
+# Check PPPoE Server  
+/interface pppoe-server server print
+
+# Check RADIUS
+/radius print
+```
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Download fails | Check internet connection |
+| Import errors | Ensure admin privileges |
+| Auth not working | Verify RADIUS settings |
+
+<Warning>
+  Replace `YOUR-TENANT` with your actual tenant subdomain in all commands.
+</Warning>
+

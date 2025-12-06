@@ -1,0 +1,120 @@
+---
+title: Dashboard Overview
+description: 'Understanding the NasRadius dashboard and its key features'
+---
+
+## Overview
+
+The Dashboard is your command center for monitoring your ISP business. It provides real-time insights into:
+
+- Revenue metrics (daily, weekly, monthly, total)
+- Customer statistics
+- Online user counts
+- Performance trends
+
+<Frame>
+  <img src="/images/dashboard-overview.png" alt="NasRadius Dashboard" />
+</Frame>
+
+## Dashboard Modes
+
+NasRadius supports two operational modes, each with its own dashboard view:
+
+<CardGroup cols={2}>
+  <Card title="Hotspot Mode" icon="wifi">
+    For managing WiFi hotspot networks with voucher-based authentication
+  </Card>
+  <Card title="PPPoE Mode" icon="router">
+    For managing Point-to-Point Protocol over Ethernet connections
+  </Card>
+</CardGroup>
+
+## Key Components
+
+### Stat Cards
+
+The top section displays key metrics as interactive cards:
+
+| Metric | Description | Trend |
+|--------|-------------|-------|
+| Daily Customers | New customers today | 30-day sparkline |
+| Daily Revenue | Revenue collected today | 30-day sparkline |
+| Weekly Revenue | This week's total revenue | 4-week sparkline |
+| Total Customers | All registered customers | Cumulative trend |
+| Total Revenue | All-time revenue | Cumulative trend |
+| Online Customers | Currently connected users | 24-hour activity |
+
+### Charts
+
+The dashboard includes several analytical charts:
+
+<AccordionGroup>
+  <Accordion icon="chart-bar" title="Monthly Revenue & Transactions">
+    Bar chart showing revenue and transaction counts per month, including your monthly service bill (4% of revenue)
+  </Accordion>
+  <Accordion icon="calendar-week" title="Weekly Revenue">
+    Day-by-day breakdown of revenue for the current or previous week
+  </Accordion>
+  <Accordion icon="chart-pie" title="Plan Performance">
+    Analysis of which internet plans are most popular
+  </Accordion>
+  <Accordion icon="trophy" title="Top Customers">
+    Ranking of your highest-spending customers
+  </Accordion>
+  <Accordion icon="server" title="Revenue by NAS">
+    Revenue breakdown by network access server location
+  </Accordion>
+</AccordionGroup>
+
+## Real-Time Updates
+
+<Info>
+  Dashboard data refreshes automatically when you load the page. To get the latest data, simply refresh your browser.
+</Info>
+
+## Navigation
+
+From the dashboard, you can quickly access:
+
+- **Online Customers**: Click the "View" button on the Online Customers card
+- **Settings**: Access via the sidebar
+- **Other sections**: Use the sidebar navigation
+
+## Understanding the Metrics
+
+### Revenue Calculations
+
+```
+Daily Revenue = Sum of all payments received today
+Weekly Revenue = Sum of payments from Monday to current day
+Monthly Revenue = Sum of payments for the current month
+Total Revenue = All-time sum of payments
+```
+
+### Customer Counts
+
+```
+Daily Customers = New registrations today
+Total Customers = All registered accounts
+Online Customers = Active sessions right now
+```
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Switch Modes"
+    icon="toggle-on"
+    href="/dashboard/switching-modes"
+  >
+    Learn to toggle between Hotspot and PPPoE
+  </Card>
+  <Card
+    title="Hotspot Dashboard"
+    icon="wifi"
+    href="/dashboard/hotspot-dashboard"
+  >
+    Explore Hotspot-specific features
+  </Card>
+</CardGroup>
+

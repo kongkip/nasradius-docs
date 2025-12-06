@@ -1,0 +1,57 @@
+---
+title: NAS Device Management
+description: 'Managing Network Access Server configurations'
+---
+
+## Overview
+
+NAS (Network Access Server) devices are your Mikrotik routers that handle user authentication.
+
+## NAS Configuration
+
+Each NAS device stores:
+
+| Field | Description |
+|-------|-------------|
+| Name | Device identifier |
+| Location | Physical location |
+| NAS IP | Internal IP address |
+| Public IP | External IP address |
+| WebFig URL | Router admin URL |
+
+## Adding a NAS Device
+
+<Steps>
+  <Step title="Click Add NAS Device">
+    Click the **Add NAS Device** button
+  </Step>
+  <Step title="Enter Details">
+    Fill in device name, location, and IP addresses
+  </Step>
+  <Step title="Save">
+    Click **Create** to add the device
+  </Step>
+</Steps>
+
+## Editing a NAS Device
+
+1. Click the edit icon on the device card
+2. Update the desired fields
+3. Click **Update** to save changes
+
+## Deleting a NAS Device
+
+1. Click the delete icon on the device card
+2. Confirm the deletion
+
+<Warning>
+  Deleting a NAS device removes its configuration. Ensure no customers are actively using it.
+</Warning>
+
+## Best Practices
+
+- Use descriptive names (e.g., "Office-Main-Router")
+- Keep IP addresses updated
+- Document WebFig URLs for quick access
+- Include location for multi-site setups
+

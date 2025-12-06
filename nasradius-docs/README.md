@@ -1,6 +1,6 @@
 # NasRadius Documentation
 
-This repository contains the Mintlify documentation for NasRadius - Your Complete ISP Billing Solution.
+This folder contains the Mintlify documentation for NasRadius.
 
 ## Getting Started with Mintlify
 
@@ -18,6 +18,7 @@ This repository contains the Mintlify documentation for NasRadius - Your Complet
 
 2. Run the development server:
    ```bash
+   cd docs
    mintlify dev
    ```
 
@@ -35,7 +36,8 @@ To deploy to Mintlify:
 ## Documentation Structure
 
 ```
-├── docs.json                    # Main configuration file
+docs/
+├── mint.json                    # Main configuration file
 ├── introduction.mdx             # Home page
 ├── getting-started/
 │   ├── creating-account.mdx
@@ -87,6 +89,7 @@ To deploy to Mintlify:
 │   └── light.svg
 ├── favicon.svg
 └── images/                      # Add screenshots here
+    └── .gitkeep
 ```
 
 ## Adding Images
@@ -104,7 +107,7 @@ To deploy to Mintlify:
 
 ### Colors
 
-Edit `docs.json` to change the color scheme:
+Edit `mint.json` to change the color scheme:
 ```json
 {
   "colors": {
@@ -117,7 +120,7 @@ Edit `docs.json` to change the color scheme:
 
 ### Navigation
 
-Edit the `navigation` array in `docs.json` to add/remove/reorder pages.
+Edit the `navigation` array in `mint.json` to add/remove/reorder pages.
 
 ### Adding New Pages
 
@@ -129,7 +132,7 @@ Edit the `navigation` array in `docs.json` to add/remove/reorder pages.
    description: Page description
    ---
    ```
-3. Add the page path to `docs.json` navigation
+3. Add the page path to `mint.json` navigation
 
 ## Mintlify Components
 
@@ -147,3 +150,4 @@ Common components used in this documentation:
 ## Support
 
 For documentation issues, contact: support@nasradius.com
+

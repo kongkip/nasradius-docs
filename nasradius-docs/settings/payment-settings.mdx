@@ -1,0 +1,62 @@
+---
+title: Payment Settings
+description: 'Configuring M-PESA and Kopokopo for Hotspot payments'
+---
+
+## Overview
+
+Payment Settings allows you to configure mobile money integration for receiving payments.
+
+<Note>
+  This tab is only available in **Hotspot mode**.
+</Note>
+
+## Supported Providers
+
+| Provider | Description |
+|----------|-------------|
+| M-PESA | Direct Safaricom integration |
+| Kopokopo | Payment aggregator |
+
+## M-PESA Configuration
+
+<Steps>
+  <Step title="Select M-PESA">
+    Choose M-PESA from the provider dropdown
+  </Step>
+  <Step title="Choose Mode">
+    Select Till or Paybill mode
+  </Step>
+  <Step title="Enter Credentials">
+    Fill in Consumer Key, Consumer Secret, Shortcode, Till Number, and Passkey
+  </Step>
+  <Step title="Save">
+    Click **Create** or **Update**
+  </Step>
+</Steps>
+
+## Kopokopo Configuration
+
+<Steps>
+  <Step title="Select Kopokopo">
+    Choose Kopokopo from the provider dropdown
+  </Step>
+  <Step title="Enter Credentials">
+    Fill in Client ID, Client Secret, and STK Till Number
+  </Step>
+  <Step title="Save">
+    Click **Create** or **Update**
+  </Step>
+</Steps>
+
+## Testing
+
+After configuration:
+1. Make a small test payment
+2. Verify it appears in Payments
+3. Check customer balance is credited
+
+<Warning>
+  Use production credentials for live payments, not sandbox.
+</Warning>
+

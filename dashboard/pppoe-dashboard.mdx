@@ -1,0 +1,151 @@
+---
+title: PPPoE Dashboard
+description: 'Understanding the PPPoE Dashboard for fixed-line subscriber management'
+---
+
+## Overview
+
+The PPPoE Dashboard is designed for managing Point-to-Point Protocol over Ethernet subscribers, typically used for:
+- Home internet connections
+- Business internet services
+- Fixed-line subscriber management
+
+## Key Metrics
+
+The PPPoE dashboard displays essential business metrics:
+
+<CardGroup cols={2}>
+  <Card title="Customer Statistics" icon="users">
+    Total subscribers, active connections, new sign-ups
+  </Card>
+  <Card title="Revenue Metrics" icon="chart-line">
+    Daily, weekly, monthly, and total revenue
+  </Card>
+  <Card title="Online Status" icon="signal">
+    Currently connected PPPoE sessions
+  </Card>
+  <Card title="Performance Trends" icon="trending-up">
+    Growth indicators and sparkline trends
+  </Card>
+</CardGroup>
+
+## Dashboard Components
+
+### Stat Cards
+
+Similar to Hotspot mode, PPPoE dashboard includes stat cards for:
+- Daily Revenue
+- Weekly Revenue
+- Total Customers
+- Total Revenue
+- Online Customers
+
+### Revenue Charts
+
+<AccordionGroup>
+  <Accordion icon="chart-bar" title="Monthly Revenue">
+    View month-by-month revenue performance with transaction counts
+  </Accordion>
+  <Accordion icon="calendar-week" title="Weekly Breakdown">
+    Analyze daily revenue patterns within the week
+  </Accordion>
+  <Accordion icon="chart-pie" title="Plan Distribution">
+    See which PPPoE packages are most popular
+  </Accordion>
+</AccordionGroup>
+
+## PPPoE vs Hotspot Dashboard Differences
+
+| Feature | PPPoE Dashboard | Hotspot Dashboard |
+|---------|-----------------|-------------------|
+| Authentication | Username/Password | Phone/Voucher |
+| Session Type | Persistent connection | Time/Data limited |
+| Payment Settings Tab | ❌ Not available | ✅ Available |
+| SMS Usage Chart | ❌ Not shown | ✅ Available |
+| Customer MAC Address | ❌ Not primary | ✅ Displayed |
+
+## Understanding PPPoE Metrics
+
+### Connection Status
+
+PPPoE connections are typically:
+- **Persistent**: Customers stay connected for extended periods
+- **Billed monthly**: Usually on subscription basis
+- **Profile-based**: Each customer has an assigned profile with speed limits
+
+### Revenue Tracking
+
+```
+PPPoE Revenue = Monthly subscription fees + Overage charges
+Typically: Prepaid monthly payments or postpaid billing
+```
+
+## Common Use Cases
+
+<Steps>
+  <Step title="Home Internet">
+    Residential customers with PPPoE routers connecting for home internet
+  </Step>
+  <Step title="Business Connections">
+    Office internet services with dedicated bandwidth profiles
+  </Step>
+  <Step title="Bulk Subscribers">
+    Apartment complexes or estates with centralized PPPoE management
+  </Step>
+</Steps>
+
+## Navigation
+
+From the PPPoE Dashboard, access:
+
+| Section | Purpose |
+|---------|---------|
+| Customers | Manage PPPoE subscriber accounts |
+| Plan Setup | Create/edit PPPoE profiles |
+| Vouchers | Generate access vouchers |
+| Payments | Track subscription payments |
+| Online Customers | View active PPPoE sessions |
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion icon="calendar-check" title="Monthly Reviews">
+    Review subscriber metrics at month-end for billing reconciliation
+  </Accordion>
+  <Accordion icon="user-check" title="Profile Management">
+    Ensure PPPoE profiles match your service packages
+  </Accordion>
+  <Accordion icon="clock-rotate-left" title="Session Monitoring">
+    Regularly check online customers to identify connection issues
+  </Accordion>
+</AccordionGroup>
+
+## Switching to Hotspot
+
+If you also manage hotspot networks, use the toggle button to switch:
+
+<Frame>
+  <img src="/images/toggle-to-hotspot.png" alt="Switch to Hotspot Mode" />
+</Frame>
+
+Click the **Hotspot** button with the WiFi icon to switch modes.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="PPPoE Customers"
+    icon="users"
+    href="/customers/pppoe-customers"
+  >
+    Manage your PPPoE subscribers
+  </Card>
+  <Card
+    title="Create Plans"
+    icon="wifi"
+    href="/billing/plan-setup"
+  >
+    Set up PPPoE service profiles
+  </Card>
+</CardGroup>
+
