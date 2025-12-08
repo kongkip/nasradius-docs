@@ -121,20 +121,22 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@nasradius.com"
+        "href": "mailto:evanskiplagat3@gmail.com"
       }
     ],
     "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.nasradius.com"
+      "type": "input",
+      "label": "Go",
+      "placeholder": "Enter tenant name",
+      "template": "https://{value}.nasradius.com"
     }
   },
   "footer": {
     "socials": {
       "x": "https://twitter.com/nasradius",
       "github": "https://github.com/nasradius",
-      "linkedin": "https://linkedin.com/company/nasradius"
+      "linkedin": "https://linkedin.com/company/nasradius",
+      "tiktok": "https://tiktok.com/@nasradius"
     }
   }
 }
