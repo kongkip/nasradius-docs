@@ -125,18 +125,16 @@
       }
     ],
     "primary": {
-      "type": "input",
-      "label": "Go",
-      "placeholder": "Enter tenant name",
-      "template": "https://{value}.nasradius.com"
+      "type": "button",
+      "label": "Go to Dashboard",
+      "href": "https://nasradius.com"
     }
   },
   "footer": {
     "socials": {
       "x": "https://twitter.com/nasradius",
       "github": "https://github.com/nasradius",
-      "linkedin": "https://linkedin.com/company/nasradius",
-      "tiktok": "https://tiktok.com/@nasradius"
+      "linkedin": "https://linkedin.com/company/nasradius"
     }
   }
 }
