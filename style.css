@@ -1,0 +1,17 @@
+.nav-logo {
+  height: clamp(60px, 6vw, 80px);
+  width: auto;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 60px;
+  }
+}
